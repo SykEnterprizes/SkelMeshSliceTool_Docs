@@ -68,6 +68,22 @@ More permissive
 
 This control is especially important near edge loops and cut boundaries.
 
+Final Mesh Setup options
+---
+Controls to change what type, and what features the final mesh will have
+
+Modular meshes or Partial skeletons
+
+Singular bone extraction or bone chain extraction
+
+Select Morph targets to be extracted and applied
+
+Auto-Skinweighting of the final mesh
+
+Extract as a static mesh or a skeletal mesh
+
+Gradient skinning on limb ends and stumps to help with deformation artifacts from overlapping modular meshes
+
 Edge Loop Detection & Filtering
 ---
 After vertices are extracted, the system identifies open edge loops along the cut boundary.
