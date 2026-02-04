@@ -64,11 +64,13 @@ Modular characters
 
 Master Pose setups
 
-Recommended First-Time Settings
----
-Weight Threshold: 125 – 255
+## Recommended First-Time Settings
+
+Weight Threshold: 255
+
+BoneChain: true
+
 Auto Skin Weighting: Enabled
-Procedural Capping: Enabled
 
 ## Common First-Time Issues
 
