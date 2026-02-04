@@ -2,15 +2,17 @@
 ---
 ## 1. Enable the Plugin
 
-Enable Procedural Limb Extraction Plugin in the Plugin Manager
+Enable SkelMeshSliceTool Plugin in the Plugin Manager
 
 Restart the editor if prompted
 
 ## 2. Open the Limb Extractor Tool
 
-Navigate to Tools → Limb Extractor
+Navigate to All/Plugins/SkelMeshSliceTool Content/WBP_LimbExtractorTool
 
-The tool runs editor-only and does not modify the source mesh
+Right Click and select 'Run Editor Utility Widget'
+
+The tool runs editor-only and DOES NOT modify the source mesh
 
 ## 3. Select a Skeletal Mesh
 
@@ -25,7 +27,7 @@ You can extract a limb in one of two ways:
 Bone Chain Selection
 Select a root bone (e.g. upperarm_l, spine_03) to extract a continuous chain
 
-Cut Plane Tool (Optional)
+Cut Plane Tool (Optional) - 
 Use the Cut Plane Gizmo to manually define a separation point
 
 Bone-chain extraction is recommended for first use.
@@ -79,3 +81,5 @@ Mesh missing sections → Increase Weight Threshold
 Holes near joints → Increase Weight Threshold or adjust bone chain
 
 No mesh generated → Threshold too restrictive or invalid bone chain
+
+Weights pulling towards origin -> Extraction results vary depending on prior skinweights. Set Auto-Skinweight to true
