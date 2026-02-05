@@ -1,12 +1,6 @@
-## Quick Start
----
-## 1. Enable the Plugin
 
-Enable SkelMeshSliceTool Plugin in the Plugin Manager
 
-Restart the editor if prompted
-
-## 2. Open the Limb Extractor Tool
+## 1. Open the Limb Extractor Tool
 
 Navigate to All/Plugins/SkelMeshSliceTool Content/WBP_LimbExtractorTool
 
@@ -14,13 +8,13 @@ Right Click and select 'Run Editor Utility Widget'
 
 The tool runs editor-only and DOES NOT modify the source mesh
 
-## 3. Select a Skeletal Mesh
+## 2. Select a Skeletal Mesh
 
 Assign a Skeletal Mesh in the picker
 
 Once selected, the skeleton hierarchy will be available for bone-chain selection
 
-## 4. Choose an Extraction Method
+## 3. Choose an Extraction Method
 
 You can extract a limb in one of two ways:
 
@@ -32,7 +26,7 @@ Use the Cut Plane Gizmo to manually define a separation point
 
 Bone-chain extraction is recommended for first use.
 
-## 5. Set the Weight Threshold
+## 4. Set the Weight Threshold
 
 Start with a value between 125 – 255 (recommended default)
 
@@ -42,7 +36,7 @@ Lower values are more restrictive and may introduce holes
 
 If no vertices meet the threshold, mesh generation will fail.
 
-## 6. Generate the Mesh
+## 5. Generate the Mesh
 
 Click Generate Mesh
 
@@ -54,7 +48,7 @@ Filtered and renormalized skin weights
 
 Optional procedural capping
 
-## 7. Merge / View Result
+## 6. Merge / View Result
 
 Use Merge / View to preview the extracted limb
 
