@@ -4,7 +4,9 @@
 
 Navigate to All/Plugins/SkelMeshSliceTool Content/WBP_LimbExtractorTool
 
-Right Click and select 'Run Editor Utility Widget'
+![Navigate to The Plugin](../Images/WBP_Location.jpg)
+
+Navigate to WBP_LimbExtractorTool - Right Click and select 'Run Editor Utility Widget'
 
 The tool runs editor-only and DOES NOT modify the source mesh
 
@@ -12,11 +14,21 @@ The tool runs editor-only and DOES NOT modify the source mesh
 
 Assign a Skeletal Mesh in the picker
 
+![Assign a Mesh](../Images/PickMesh.jpg)
+
 Once selected, the skeleton hierarchy will be available for bone-chain selection
 
-## 3. Choose an Extraction Method
+## 3. Choose a Bone
+
+Choose a Bone from the hierachy
+
+Set BoneChain to true to extract the entire bones child hierachy
+
+## 4. Choose an Extraction Method
 
 You can extract a limb in one of two ways:
+
+![Choose Extraction Method](PickMethod.jpg)
 
 Bone Chain Selection
 Select a root bone (e.g. upperarm_l, spine_03) to extract a continuous chain
@@ -26,9 +38,11 @@ Use the Cut Plane Gizmo to manually define a separation point
 
 Bone-chain extraction is recommended for first use.
 
-## 4. Set the Weight Threshold
+## 5. Set the Weight Threshold
 
 Start with a value between 125 – 255 (recommended default)
+
+![Pick Vertice Weight Strength](../Images/PickWeight.jpg)
 
 Higher values include more vertices and produce a more complete mesh
 
@@ -36,7 +50,7 @@ Lower values are more restrictive and may introduce holes
 
 If no vertices meet the threshold, mesh generation will fail.
 
-## 5. Generate the Mesh
+## 6. Generate the Mesh
 
 Click Generate Mesh
 
@@ -48,9 +62,13 @@ Filtered and renormalized skin weights
 
 Optional procedural capping
 
-## 6. Merge / View Result
+![Generate Mesh](../Images/GenerateMesh.jpg)
+
+## 7. Merge / View Result
 
 Use Merge / View to preview the extracted limb
+
+![Merge And View](../Images/MergeAndView.jpg)
 
 Important Note:
 - if Use Masterpose is set to false, dialog will pop-up asking to regenerate the skeleton.
