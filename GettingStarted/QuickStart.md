@@ -40,6 +40,8 @@ Choose a Bone from the hierachy
 
 Set BoneChain to true to extract the selected bone and its child hierachy
 
+![SetOptions](../Images/OptionSelect.jpg)
+
 ## 5. Set the Weight Threshold
 
 Start with a value between 125 – 255 (recommended default)
@@ -79,6 +81,10 @@ Generated meshes are compatible with:
 - Props
 - Modular characters
 - Master Pose setups
+
+Important Note:
+The example mesh shown is a partial skeleton used for props, and is not masterpose compatible
+Setting Use Master Pose to true will make the mesh compatible for Master Pose
 
 ## Recommended First-Time Settings
 
