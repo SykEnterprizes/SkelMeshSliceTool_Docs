@@ -4,6 +4,8 @@ and have them apply to the extracted mesh
 
 Only relevant morphs are applied to the extracted mesh so irrelevant morphs do not appear in the mesh details
 
+![Morph Example](../Images/MorphExample.jpg)
+
 Morph target extraction, and application to the extracted mesh are dependant on a higher level of
 Vert Weight Strength during extraction
 
