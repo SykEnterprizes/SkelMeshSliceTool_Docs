@@ -15,7 +15,9 @@ Bone selection is redundant for this extraction method
 
 Step 3:
 ---
-Press 'Toggle CutPlaneTool'
+Press 'Toggle CutPlaneTool
+
+![Press Toggle](../Images/CutPlaneToggle.jpg)
 
 The selected mesh will appear with the CutPlaneTool in the viewport
 
@@ -25,6 +27,8 @@ Step 4:
 ---
 In the World Outliner, select the CutPlaneTool
 
+![Position the tool](../Images/CutPlanePosition.jpg)
+
 Position the CutPlaneTool in desired location and rotation
 
 The Red Extraction Box is the visual cue for what mesh will be included
@@ -32,6 +36,8 @@ The Red Extraction Box is the visual cue for what mesh will be included
 Step 5:
 ---
 Set the desired options in the tool
+
+![CutPlane Options](../Images/CutPlaneOptions.jpg)
 
 Refer to [CutPlaneToolsControls](Reference/CutPlaneToolControls.md)
 
@@ -43,11 +49,17 @@ Step 6:
 When the desired mesh is inside the extraction box: 
 - Press 'RunCutMesh' in the main UI
 
+![Cut Mesh](../Images/CutPlaneCutMesh.jpg)
+
 Step 7:
 --- 
 Toggle the CutPlaneTool to remove the source mesh and CutplaneTool instance ffrom the viewport to reduce clutter
 
+![Toggle after cut](../Images/CutPlaneToggleAfterCut.jpg)
+
 Then:
+
+![View CutPlane details](../Images/CutPlaneViewDetails.jpg)
 
 - Select the mesh in the World Outliner
 - Open the Details tab
@@ -55,6 +67,8 @@ Then:
 - Open the mesh in Persona
 
 Verify:
+
+![verify mesh](../Images/CutPlaneCheckInPersona.jpg)
 
 - Deformation
 - Morph targets
@@ -68,6 +82,8 @@ The user may now create caps using the Cap-Data widgets in the capping menu
 
 Refer to [Cap Controls](Reference/CappingMenuControls.md)
 
+![CutPlane Capping](../Images/CutPlaneCapping.jpg)
+
 Important note:
 Once a cap is created, it cannot be cleared, only overwritten
 
@@ -76,6 +92,8 @@ Step 9:
 If the generated mesh and caps are correct:
 
 Press Merge And View
+
+![Check merged meshes](../Images/CutPlaneCheckMergedMeshes.jpg)
 
 A new Persona tab will open. Verify:
 
