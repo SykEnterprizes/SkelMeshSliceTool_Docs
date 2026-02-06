@@ -5,6 +5,8 @@ The physics asset follows rules to limit movement within human limb tolerances
 
 The tool generates a single convex hull as a catch-all
 
+![Physics Asset Example](../Images/PhysicsAssetExample.jpg)
+
 This is in no way meant to be a final production asset
 
 It is designed to be a basic starter asset to speed-up iteration time
