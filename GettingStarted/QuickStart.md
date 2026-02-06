@@ -10,27 +10,11 @@ Navigate to WBP_LimbExtractorTool - Right Click and select 'Run Editor Utility W
 
 The tool runs editor-only and DOES NOT modify the source mesh
 
-## 2. Select a Skeletal Mesh
-
-Assign a Skeletal Mesh in the picker
-
-![Assign a Mesh](../Images/PickMesh.jpg)
-
-Once selected, the skeleton hierarchy will be available for bone-chain selection
-
-## 3. Choose a Bone
-
-Choose a Bone from the hierachy
-
-![Bone Selection](../Images/BoneSelection.jpg)
-
-Set BoneChain to true to extract the entire bones child hierachy
-
-## 4. Choose an Extraction Method
+## 2. Choose an Extraction Method
 
 You can extract a limb in one of two ways:
 
-![Choose Extraction Method](PickMethod.jpg)
+![Choose Extraction Method](../Images/PickMethod.jpg)
 
 Bone Chain Selection
 Select a root bone (e.g. upperarm_l, spine_03) to extract a continuous chain
@@ -39,6 +23,22 @@ Cut Plane Tool (Optional) -
 Use the Cut Plane Gizmo to manually define a separation point
 
 Bone-chain extraction is recommended for first use.
+
+## 3. Select a Skeletal Mesh
+
+Assign a Skeletal Mesh in the picker
+
+![Assign a Mesh](../Images/PickMesh.jpg)
+
+Once selected, the skeleton hierarchy will be available for bone-chain selection
+
+## 4. Choose a Bone
+
+Choose a Bone from the hierachy
+
+![Bone Selection](../Images/BoneSelection.jpg)
+
+Set BoneChain to true to extract the selected bone and its child hierachy
 
 ## 5. Set the Weight Threshold
 
@@ -58,11 +58,9 @@ Click Generate Mesh
 
 A new skeletal mesh asset will be created with:
 
-Preserved bind pose alignment
-
-Filtered and renormalized skin weights
-
-Optional procedural capping
+- Preserved bind pose alignment
+- Filtered and renormalized skin weights
+- Optional procedural capping
 
 ![Generate Mesh](../Images/GenerateMesh.jpg)
 
@@ -78,26 +76,19 @@ Important Note:
   
 Generated meshes are compatible with:
 
-Props
-
-Modular characters
-
-Master Pose setups
+- Props
+- Modular characters
+- Master Pose setups
 
 ## Recommended First-Time Settings
 
-Weight Threshold: 255
-
-BoneChain: true
-
-Auto Skin Weighting: Enabled
+- Weight Threshold: 255
+- BoneChain: true
+- Auto Skin Weighting: Enabled
 
 ## Common First-Time Issues
 
-Mesh missing sections → Increase Weight Threshold
-
-Holes near joints → Increase Weight Threshold or adjust bone chain
-
-No mesh generated → Threshold too restrictive or invalid bone chain
-
-Weights pulling towards origin -> Extraction results vary depending on prior skinweights. Set Auto-Skinweight to true
+- Mesh missing sections → Increase Weight Threshold
+- Holes near joints → Increase Weight Threshold or adjust bone chain
+- No mesh generated → Threshold too restrictive or invalid bone chain
+- Weights pulling towards origin -> Extraction results vary depending on prior skinweights. Set Auto-Skinweight to true
