@@ -53,24 +53,28 @@ When the desired mesh is inside the extraction box:
 
 Step 7:
 --- 
-Toggle the CutPlaneTool to remove the source mesh and CutplaneTool instance ffrom the viewport to reduce clutter
+Toggle the CutPlaneTool to remove the source mesh and CutplaneTool instance ffrom the viewport.
+
+The Extracted mesh will remain
 
 ![Toggle after cut](../Images/CutPlaneToggleAfterCut.jpg)
 
 Then:
 
-![View CutPlane details](../Images/CutPlaneViewDetails.jpg)
-
 - Select the mesh in the World Outliner
 - Open the Details tab
+  
+![View CutPlane details](../Images/CutPlaneViewDetails.jpg)
+
 - Select the Skeletal Mesh Component
 - Open the mesh in Persona
 
 Verify:
 
-![verify mesh](../Images/CutPlaneCheckInPersona.jpg)
-
 - Deformation
+
+  ![verify mesh](../Images/CutPlaneCheckInPersona.jpg)
+  
 - Morph targets
 - Animation
 - UVs
@@ -85,7 +89,7 @@ Refer to [Cap Controls](Reference/CappingMenuControls.md)
 ![CutPlane Capping](../Images/CutPlaneCapping.jpg)
 
 Important note:
-Once a cap is created, it cannot be cleared, only overwritten
+Once a cap is created, it cannot be cleared, only overwritten.  Re-generating the mesh will clear all Caps
 
 Step 9:
 ---
