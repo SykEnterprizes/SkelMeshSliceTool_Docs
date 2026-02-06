@@ -40,12 +40,12 @@ If Mirrored mode is selected, double check the extraction box positioning
 
 Step 6:
 ---
-When the desired mesh is inside the extraction box:
-Press 'RunCutMesh' in the main UI
+When the desired mesh is inside the extraction box: 
+- Press 'RunCutMesh' in the main UI
 
 Step 7:
 --- 
-Toggle the CutPlaneTool to revove the source mesh and CutplaneTool instance ffrom the viewport to reduce clutter
+Toggle the CutPlaneTool to remove the source mesh and CutplaneTool instance ffrom the viewport to reduce clutter
 
 Then:
 
