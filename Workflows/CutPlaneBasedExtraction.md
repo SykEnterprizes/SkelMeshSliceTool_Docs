@@ -64,6 +64,12 @@ Verify:
 
 Step 8:
 ---
+The user may now create caps using the Cap-Data widgets in the capping menu
+
+Refer to [Cap Controls](Reference/CappingMenuControls.md)
+
+Important note:
+Once a cap is created, it cannot be cleared, only overwritten
 
 Step 9:
 ---
@@ -73,23 +79,17 @@ Press Merge And View
 
 A new Persona tab will open. Verify:
 
-Deformation
-
-Morph targets
-
-Animation
-
-UVs
-
-Materials
-
-Generated Physics Asset
+- Deformation
+- Morph targets
+- Animation
+- UVs
+- Materials
+- Generated Physics Asset
 
 If suitable, save the asset:
 
-Skeletal Mesh: TempMergedSkelMeshes
-
-Static Mesh: TempMergedStaticMeshes
+- Skeletal Mesh: TempMergedSkelMeshes
+- Static Mesh: TempMergedStaticMeshes
 
 Important Note
 
