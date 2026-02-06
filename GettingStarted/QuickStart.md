@@ -22,6 +22,8 @@ Once selected, the skeleton hierarchy will be available for bone-chain selection
 
 Choose a Bone from the hierachy
 
+![Bone Selection](../Images/BoneSelection.jpg)
+
 Set BoneChain to true to extract the entire bones child hierachy
 
 ## 4. Choose an Extraction Method
