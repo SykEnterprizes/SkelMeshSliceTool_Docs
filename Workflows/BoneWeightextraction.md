@@ -74,6 +74,7 @@ Bone Chain:
 
 AutoWeighting:
 - True discards extracted skin weights and applies auto-skinning
+  Refer to [Auto-Weighting Controls](Reference/UIMeshControls.md)
 - False preserves the original skin weights
 
 Important Note:
