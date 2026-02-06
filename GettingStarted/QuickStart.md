@@ -52,6 +52,10 @@ Optional procedural capping
 
 Use Merge / View to preview the extracted limb
 
+Important Note:
+- if Use Masterpose is set to false, dialog will pop-up asking to regenerate the skeleton.
+  This is normal behaviour, select Yes to let Unreal rebuild animation
+  
 Generated meshes are compatible with:
 
 Props

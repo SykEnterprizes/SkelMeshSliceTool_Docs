@@ -1,5 +1,9 @@
-## 1. Enable the Plugin
+## Installation Steps
 
-Enable SkelMeshSliceTool Plugin in the Plugin Manager
+1. Download the plugin files
+2. Copy the plugin to your project's Plugins folder
+3. Enable the plugin in Unreal Engine
+   
+   ![Enable Plugin](../Images/EnablePlugin.jpg)
 
-Restart the editor if prompted
+4. Restart the editor when prompted
