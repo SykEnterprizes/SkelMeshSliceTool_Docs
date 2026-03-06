@@ -4,56 +4,38 @@ The Cut Plane Tool is an alternative extraction method that allows you to define
 instead of relying on predefined bone chains.
 
 This is useful when:
-
-A clean bone chain is not available
-
-You need a non-standard cut (torso damage, partial limbs, asymmetrical breaks)
-
-You want more visual control over where the mesh is separated
+- A clean bone chain is not available
+- You need a non-standard cut (torso damage, partial limbs, asymmetrical breaks)
+- You want more visual control over where the mesh is separated
 
 ## When to Use the Cut Plane Tool
 
 Use the Cut Plane Tool when:
-
-Bone-chain extraction produces unwanted geometry
-
-You need to cut across multiple bones
-
-You want to visually position the cut rather than selecting bones
-
-You want mirrored extractions (eg: left and right full arms for a modular mesh asset)
-
-You want a bone chain, but only a partial section of the root or child bones
+- Bone-chain extraction produces unwanted geometry
+- You need to cut across multiple bones
+- You want to visually position the cut rather than selecting bones
+- You want mirrored extractions (eg: left and right full arms for a modular mesh asset)
+- You want a bone chain, but only a partial section of the root or child bones
 
 ## Basic Cut Plane Workflow
 
-Select a Skeletal Mesh
-
-Switch Extraction Mode to Cut Plane
-
-Toggle the Cut Plane Tool
-
-Position and orient the plane in the viewport
-
-Adjust extraction depth and bounds
-
-Generate Mesh
+- Select a Skeletal Mesh
+- Switch Extraction Mode to Cut Plane
+- Toggle the Cut Plane Tool
+- Position and orient the plane in the viewport
+- Adjust extraction depth and bounds
+- Generate Mesh
 
 The tool extracts vertices within the defined cut volume and builds a new skeletal mesh from the result.
 
 ## How the Cut Plane Works (High-Level)
 
 The Cut Plane Tool:
-
-Defines a 3D extraction volume aligned to a plane
-
-Selects vertices inside that volume
-
-Filters vertices based on bone influence
-
-Preserves skin weights for the extracted bones
-
-Leaves an open boundary suitable for procedural capping
+- Defines a 3D extraction volume aligned to a plane
+- Selects vertices inside that volume
+- Filters vertices based on bone influence
+- Preserves skin weights for the extracted bones
+- Leaves an open boundary suitable for procedural capping
 
 No geometry is modified until Generate Mesh is pressed.
 
