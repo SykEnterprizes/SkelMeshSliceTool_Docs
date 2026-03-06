@@ -7,34 +7,25 @@ This menu creates one Cap widget per-edgeloop, and the options in the widget con
 What Capping Does
 ---
 Capping:
-
-Seals open geometry
-
-Generates interior surfaces
-
-Optionally creates gore or organic surfaces
-
-Prevents rendering and physics issues
+- Seals open geometry
+- Generates interior surfaces
+- Optionally creates gore or organic surfaces
+- Prevents rendering and physics issues
 
 Capping is optional, but strongly recommended for:
 --
-Animated limbs
-
-Physics-enabled meshes
-
-Gore effects
+- Animated limbs
+- Physics-enabled meshes
+- Gore effects
 
 Cap Selection
 ---
 Each detected edge loop can be capped independently.
 
 This allows:
-
-Multiple cuts on a single mesh
-
-Selective capping
-
-Different cap styles per cut
+- Multiple cuts on a single mesh
+- Selective capping
+- Different cap styles per cut
 
 ## Cap Geometry Controls
 
@@ -51,8 +42,7 @@ This adds fade rings to the edgeloop, allowing the mesh to be extended, and a go
 - Fade Ring Amount sets how many intermediate loops are added between the original edgeloop and the first Fade Ring, allowing higher-detail deformation when noise is enabled.
 
 Useful for:
-
-If end caps need to be extended, constricted or flared for effect
+- If end caps need to be extended, constricted or flared for effect
 
 Noise Controls
 ---
@@ -62,8 +52,7 @@ This adds organic noise to all generated cap geometry
 - Noise Amount sets the strength of the applied noise
 
 Useful for:
-
-Organic looking cuts
+- Organic looking cuts
 
 Soft tissue surfaces
 
@@ -76,8 +65,7 @@ End caps may be a standard Fan Cap with one center point, or a more organic Dome
 - Inner Ring Number sets how many inner rings are added to the dome.  It allows noise to affect the mesh more dramatically
   
 Useful for:
-
-Organic Gore appearance
+- Organic Gore appearance
 
 Bridging  Controls
 ---
@@ -87,8 +75,7 @@ This joins two edgeloops together, creating a bridge of geometry
 - Loop To Bridge To, selects a valid loop the current loop will bridge to
 
 Useful for:
-
-Meshes with low weight thresholds that have gaps in betwen edge loops (eg: joint vertices missing between bones in a chain)
+- Meshes with low weight thresholds that have gaps in betwen edge loops (eg: joint vertices missing between bones in a chain)
 
 Skinning Type
 ---
@@ -99,8 +86,7 @@ This is the type of skinning applied to the generated cap geometry
   - Proximity Bind assigns blended weights between the chain's root bone, and the root bones parent 
 
 Useful for:
-
-Adjusting visual discrepancies under animation with overlapping generated meshes
+- Adjusting visual discrepancies under animation with overlapping generated meshes
 
 Cap UV Controls
 ---
@@ -111,8 +97,7 @@ This adjusts the UVs on the generated cap and fade-ring geometry
 - UV Offset Amount allows for the texture/material to be moved around on the geometry
 
 Useful for:
-
-Adjusting the positioning and visuals of the material applied to the generated cap geometry
+- Adjusting the positioning and visuals of the material applied to the generated cap geometry
 
 Reverse Cap Options
 ---
@@ -123,10 +108,8 @@ i.e a cap and reverse cap that fit together in a socket fashion
 All controls in this section work the same as the FadeRing Controls
 
 Useful for:
-
-Creating a gib mesh that complements a generated cap mesh.  
-
-Attach to a mesh socket, hide the bone and unhide the gib for a quick, inexpensive gore effect
+- Creating a gib mesh that complements a generated cap mesh.  
+- Attach to a mesh socket, hide the bone and unhide the gib for a quick, inexpensive gore effect
 
 Reverse Cap UV Controls
 ---
@@ -135,8 +118,7 @@ This allows the UVs to be adjusted on the Reverse Cap texture/material
 All controls in this section work the same as the Cap UV Controls
 
 Useful for:
-
-Adjusting the UVs on the generated gib, to give randomised gore visuals
+- Adjusting the UVs on the generated gib, to give randomised gore visuals
 
 Cap Material
 ---
