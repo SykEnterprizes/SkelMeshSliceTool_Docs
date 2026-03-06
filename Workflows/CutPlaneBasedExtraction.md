@@ -2,7 +2,7 @@
 CutPlaneTool based extraction is simple and powerful, with the option to use Mirrored Mode 
 
 NOTE - The tool will always create Skeletal Mesh Modular compatible parts, and try to extract Morph Targets
-regardless of the Mesh Options settings. The only option available is Auto-Weighting
+regardless of the Mesh Options settings. The only Mesh Option available is Auto-Weighting
 
 Step 1:
 ---
