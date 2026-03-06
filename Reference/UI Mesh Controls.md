@@ -130,83 +130,68 @@ If asymmetrical cuts are rejected → disable circularity
 Auto Skin Weighting recalculates skin weights on the extracted mesh to produce stable deformation after separation.
 
 This is primarily used when:
+- Extracting partial bone chains
+- Removing shared vertices near joints
+- Creating clean limb props or master-pose compatible meshes
+- The system operates entirely at editor time and does not affect the source mesh.
 
-Extracting partial bone chains
+## Blend Zone Width (0.0 - 10.0, Default: 3.0)
 
-Removing shared vertices near joints
+Controls how far bone influence extends into surrounding mesh.
 
-Creating clean limb props or master-pose compatible meshes
+**Lower values (1-2):**
+- Tight, localized influence
+- Sharp transitions between bones
+- Best for thin/stylized characters or rigid props
 
-The system operates entirely at editor time and does not affect the source mesh.
+**Higher values (5-8):**
+- Wide, smooth blending
+- Gradual transitions between bones  
+- Best for realistic/muscular characters
 
-Blend Zone Width
+**Tip:** Start at 3.0. Increase if you see hard bends at joints. Decrease if nearby bones are affecting areas they shouldn't.
+
 ---
-Controls the size of the transition area between bones.
 
-Lower values
+## Excluded Bone Weight Boost (0.0 - 1.0, Default: 0.7)
 
-Tighter weighting
+Controls how strongly cut edges follow their excluded bones (stumps).
 
-Harder transitions
+**What it does:**
+When extracting a body part, vertices near the cut lose influence from the excluded bone (e.g., extracting an arm loses upperarm influence). This setting controls how much of that influence is restored.
 
-Useful for clean limb breaks or rigid props
+**Higher values (0.8-0.9):**
+- Stiffer joints
+- Cut edges stay tightly aligned
+- Better for modular assembly
 
-May introduce visible seams if too low
+**Lower values (0.5-0.6):**
+- Softer joints
+- More natural deformation
+- May cause slight gaps at seams
 
-Higher values
+**Tip:** Use 0.7 for most cases. Increase to 0.8-0.9 if modular parts don't align perfectly.
 
-Smoother blending across joints
-
-Better deformation for animation
-
-Can cause weight bleeding into nearby bones if pushed too far
-
-Tip:
-Increase this slightly if joints collapse or snap during animation.
-
-Falloff Sharpness
 ---
-Controls how quickly influence fades across the blend zone.
 
-Lower values
+## Extremity Size (0.0 - 1.0, Default: 0.3)
 
-Gradual weight transitions
+Controls skinning sensitivity for fingers, toes, and end-of-chain bones.
 
-Softer deformation
+**What it does:**
+Determines how large the influence area is for bones deep in the hierarchy (fingers have higher depth than shoulders).
 
-Better for organic movement
+**Lower values (0.1-0.2):**
+- Tiny finger/toe influence
+- Tight, precise skinning
+- Best for realistic characters
 
-Higher values
+**Higher values (0.5-0.8):**
+- Larger finger/toe influence
+- Smoother extremity deformation
+- Best for stylized/chunky characters
 
-Sharper transitions
-
-More rigid behavior
-
-Useful for gore cuts or mechanical separations
-
-This does not change which bones influence a vertex — only how strongly they transition.
-
-Hierarchy Falloff
----
-Controls how much influence propagates through the bone hierarchy.
-
-Lower values
-
-Weights stay close to the target bone
-
-Minimal parent/child bleed
-
-Good for isolated limbs
-
-Higher values
-
-Influence spreads to parent and child bones
-
-Smoother full-chain deformation
-
-Useful for spine or multi-bone segments
-
-This is especially important for spine and torso chains.
+**Tip:** Use 0.3 for standard humanoids. Lower for realistic hands, higher for cartoon characters.
 
 Filter MetaHuman Ancillary Bones
 ---
