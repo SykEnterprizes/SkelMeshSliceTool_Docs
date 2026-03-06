@@ -8,12 +8,9 @@ Edge Loop Detection
 After vertex extraction, the system scans for open boundaries in the generated mesh.
 
 An edge loop is a continuous boundary of open edges created by:
-
-Bone chain truncation
-
-Cut Plane extraction
-
-Weight threshold filtering
+- Bone chain truncation
+- Cut Plane extraction
+- Weight threshold filtering
 
 These loops define where caps may be generated.
 
@@ -22,12 +19,9 @@ These loops define where caps may be generated.
 After extraction, detected edge loops are validated before being exposed to the capping system.
 
 This validation is designed to:
-
-Reject degenerate or unstable topology
-
-Prevent extremely small or broken loops
-
-Avoid editor stalls caused by excessive invalid cap-data widgets
+- Reject degenerate or unstable topology
+- Prevent extremely small or broken loops
+- Avoid editor stalls caused by excessive invalid cap-data widgets
 
 This process does not reshape or smooth loops — it only determines whether a loop is usable.
 
@@ -36,12 +30,9 @@ Validation Step 1: Minimum Vertex Count
 Each edge loop must contain a minimum number of vertices.
 
 This prevents:
-
-Single-edge loops
-
-Sliver geometry
-
-Loops created by noise or isolated triangles
+- Single-edge loops
+- Sliver geometry
+- Loops created by noise or isolated triangles
 
 If a loop does not meet the minimum vertex count, it is discarded.
 
@@ -49,81 +40,57 @@ Validation Step 2: Minimum Circumference
 ---
 The total length of the loop is calculated by summing the distance between consecutive vertices.
 
-This ensures the loop represents a meaningful surface boundary, not a tiny artifact.
-
-Loops with a circumference below the configured minimum are rejected.
+- This ensures the loop represents a meaningful surface boundary, not a tiny artifact.
+- Loops with a circumference below the configured minimum are rejected.
 
 This is especially important when:
-
-Weight thresholds are aggressive
-
-Mesh density varies significantly
-
-Small protrusions exist near cut regions
+- Weight thresholds are aggressive
+- Mesh density varies significantly
+- Small protrusions exist near cut regions
 
 Validation Step 3: Circularity Check (Optional)
 ---
 An optional circularity test is used to detect irregular or malformed loops.
 
 This check:
-
-Computes the loop’s center point
-
-Calculates the average radius from the center
-
-Measures how much each vertex deviates from that average
+- Computes the loop’s center point
+- Calculates the average radius from the center
+- Measures how much each vertex deviates from that average
 
 If the loop:
-
-Collapses toward a point
-
-Has extreme deviation
-
-Forms a highly irregular shape
+- Collapses toward a point
+- Has extreme deviation
+- Forms a highly irregular shape
 
 …it is rejected.
 
 This helps avoid:
+- Self-intersecting caps
+- Twisted or folded geometry
+- Unstable gore surfaces
 
-Self-intersecting caps
-
-Twisted or folded geometry
-
-Unstable gore surfaces
-
-Why Circularity Is Optional
-
-Not all valid cuts are circular.
+Why Circularity Is Optional - Not all valid cuts are circular.
 
 For example:
-
-Spine cuts
-
-Shoulder separations
-
-Asymmetrical damage
+- Spine cuts
+- Shoulder separations
+- Asymmetrical damage
 
 Disabling circularity allows these shapes through, at the cost of potentially rougher caps.
 
-What This System Does Not Do
-
-It does not simplify or smooth loops
-
-It does not modify vertex positions
-
-It does not “fix” topology
+What This System Does Not Do:
+- It does not simplify or smooth loops
+- It does not modify vertex positions
+- It does not “fix” topology
 
 It only determines whether a loop is safe to pass downstream to the capping stage.
 
 ## Practical Guidance
 
-If no loops appear → reduce minimum circumference
-
-If loops look broken → enable circularity check
-
-If editor hangs → increase minimum vertex count
-
-If asymmetrical cuts are rejected → disable circularity
+- If no loops appear → reduce minimum circumference
+- If loops look broken → enable circularity check
+- If editor hangs → increase minimum vertex count
+- If asymmetrical cuts are rejected → disable circularity
 
 ## Auto Skin Weighting
 
@@ -198,40 +165,28 @@ Filter MetaHuman Ancillary Bones
 When enabled, automatically excludes non-deforming helper bones commonly found in MetaHuman skeletons.
 
 This prevents:
-
-Weight pollution from facial, twist, or helper bones
-
-Unstable deformation after extraction
-
-Excessively fragmented bone influence sets
+- Weight pollution from facial, twist, or helper bones
+- Unstable deformation after extraction
+- Excessively fragmented bone influence sets
 
 Recommended:
-
-Enabled for MetaHuman assets
+- Enabled for MetaHuman assets
 
 Optional for custom skeletons, or if basic skinning is required, excluding helper bone influence
 
 ## When to Use Auto Skin Weighting
 
 Enable Auto Skin Weighting if:
-
-The extracted mesh collapses or stretches
-
-Vertices snap toward a single bone
-
-You are creating animated limb props
-
-Source Mesh weights are not high quality
-
-The source mesh used shared deformation across chains
+- The extracted mesh collapses or stretches
+- Vertices snap toward a single bone
+- You are creating animated limb props
+- Source Mesh weights are not high quality
+- The source mesh used shared deformation across chains
 
 You may disable it if:
-
-The extracted mesh is rigid
-
-You are creating static props
-
-The original weights are already clean and isolated
+- The extracted mesh is rigid
+- You are creating static props
+- The original weights are already clean and isolated
 
 Common Adjustment Patterns
 ---
@@ -244,14 +199,10 @@ MetaHuman weights look noisy ->	Enable Filter MetaHuman Ancillary Bones
 Important Note
 ---
 Auto Skin Weighting is not designed for meshes with extreme protrusions, such as:
-
-Large hair clusters
-
-Accessories intersecting limbs
-
-Dense secondary geometry near joints
-
-In these cases, manual thresholds or cut-plane extraction may produce better results.
+- Large hair clusters
+- Accessories intersecting limbs
+- Dense secondary geometry near joints
+- In these cases, manual thresholds or cut-plane extraction may produce better results.
 
 Practical Guidance
 ---
