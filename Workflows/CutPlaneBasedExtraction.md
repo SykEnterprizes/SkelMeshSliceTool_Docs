@@ -100,6 +100,10 @@ If the generated mesh and caps are correct:
 
 Press Merge And View
 
+![Choose output folder](../Images/ChooseSaveFolder.jpg)
+
+A Folder selection dialog will appear - choose an output folder and press select.
+
 ![Check merged meshes](../Images/CutPlaneCheckMergedMeshes.jpg)
 
 A new Persona tab will open. Verify:
