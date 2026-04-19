@@ -137,6 +137,8 @@ If the generated mesh and caps are correct:
 
 Press Merge And View
 
+![Choose output folder](../Images/ChooseSaveFolder.jpg)
+
 A Folder selection dialog will open.  Choose an output folder for the new mesh and press select.
 
 A new Persona tab will open. Verify:
