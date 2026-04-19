@@ -50,6 +50,8 @@ Step 4:
 ---
 Choose the desired Final Mesh Setup Options: 
 
+![SetOptions](../Images/OptionSelect.jpg)
+
 Use Master Pose:
 - True includes the entire skeleton in an extracted section
   ensuring Modular Mesh compatibility
