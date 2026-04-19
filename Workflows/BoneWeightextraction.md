@@ -137,6 +137,8 @@ If the generated mesh and caps are correct:
 
 Press Merge And View
 
+A Folder selection dialog will open.  Choose an output folder for the new mesh and press select.
+
 A new Persona tab will open. Verify:
 
 - Deformation
@@ -146,13 +148,8 @@ A new Persona tab will open. Verify:
 - Materials
 - Generated Physics Asset
 
-If suitable, save the asset:
-
-- Skeletal Mesh: TempMergedSkelMeshes
-- Static Mesh: TempMergedStaticMeshes
-
 Important Note
 
-If the result is not suitable, you must manually delete the generated mesh and physics asset from the Temp folder.
+If the result is not suitable, you must manually delete the generated mesh and physics asset from the save folder.
 
 Automatic cleanup is not available at this stage.
