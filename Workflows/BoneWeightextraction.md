@@ -8,10 +8,14 @@ Step 1:
 ---
 Set the extraction method to 
 - BoneAndWeight
-   
+
+   ![Choose Extraction Method](../Images/PickMethod.jpg)
+  
 Step 2:
 ---
 Using the mesh picker, select a Skeletal Mesh
+
+![Choose A Mesh](../Images/PickMesh.jpg)
 
 - The Tree View will populate with the mesh’s complete skeleton hierarchy
 - Use the arrows next to each bone to expand or collapse its child hierarchy
@@ -22,6 +26,8 @@ You can:
 
 - Click the bone name in the Tree View
 - Or manually type the bone name into the text box and press Enter
+
+![Choose A Bone](../Images/BoneSelection.jpg)
 
 Once selected, the bone name remains visible until:
 
@@ -77,6 +83,8 @@ Step 5:
 ---
 Select the Vert Strength by moving the slider:
 
+![Choose Weight Value](../Images/PickWeight.jpg)
+
 Lower value 
 - Reduce the amount of mesh extracted
 - Reduce morph target quality (if enabled)
@@ -94,6 +102,8 @@ Step 6:
 ---
 If the source mesh is topologically complex, edge loop filtering can reduce clutter.
 
+![Adjust Edgeloop Filters](../Images/EdgeloopControlSettingForHair.jpg)
+
 Recommended settings for a standard human mesh:
 
 - Min Loop Vertices: 8
@@ -106,6 +116,8 @@ Recommended settings for a standard human mesh:
 Step 7:
 ---
 Press Generate Base Mesh.
+
+![Generate Mesh](../Images/GenerateMesh.jpg)
 
 Then:
 
