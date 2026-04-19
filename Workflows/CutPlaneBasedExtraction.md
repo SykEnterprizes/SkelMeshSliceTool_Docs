@@ -122,6 +122,6 @@ If suitable, save the asset:
 
 Important Note
 
-If the result is not suitable, you must manually delete the generated mesh and physics asset from the Temp folder.
+If the result is not suitable, you must manually delete the generated mesh and physics asset from the save folder.
 
 Automatic cleanup is not available at this stage.
