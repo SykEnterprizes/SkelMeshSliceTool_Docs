@@ -37,8 +37,8 @@ procedural mesh capping and auto-skinweighting.
 ---
 
 ## Demo Videos
-▶ YouTube link here
-
+[▶ YouTube link here
+](https://youtube.com/shorts/DgV6_eLu1gU)
 ---
 
 ## Quick Start
