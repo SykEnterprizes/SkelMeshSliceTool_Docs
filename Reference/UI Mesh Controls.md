@@ -99,7 +99,7 @@ Auto Skin Weighting recalculates skin weights on the extracted mesh to produce s
 This is primarily used when:
 - Extracting partial bone chains
 - Removing shared vertices near joints
-- Creating clean limb props or master-pose compatible meshes
+- Creating clean limb props that deform closely (but not perfectly) in masterpose mode
 - The system operates entirely at editor time and does not affect the source mesh.
 
 ## Blend Zone Width (0.0 - 10.0, Default: 3.0)
