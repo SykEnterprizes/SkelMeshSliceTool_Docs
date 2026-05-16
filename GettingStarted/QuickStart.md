@@ -40,7 +40,7 @@ Choose a Bone from the hierachy
 
 Set BoneChain to true to extract the selected bone and its child hierachy
 
-![SetMeshOptions](../Images/OptionSelect.jpg)
+![SetMeshOptions](../Images/OptionSelect1.jpg)
 
 ## 5. Set the Weight Threshold
 
