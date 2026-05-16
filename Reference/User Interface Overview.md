@@ -70,6 +70,7 @@ Controls to change what type, and what features the final mesh will have
 - Select Morph targets to be extracted and applied
 - Auto-Skinweighting of the final mesh
 - Extract as a static mesh or a skeletal mesh
+- Prune influences and normalize weights to Unreals influence MAX of 4
   
 Edge Loop Detection & Filtering
 ---
