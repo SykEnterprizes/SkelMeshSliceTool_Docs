@@ -65,13 +65,12 @@ Bone Chain:
 - False includes only the selected bone
 
 AutoWeighting:
-- True discards extracted skin weights and applies auto-skinning
+- True discards extracted skin weights and applies auto-skinning which may improve bad weights
   Refer to [Auto-Weighting Controls](Reference/UIMeshControls.md)
 - False preserves the original skin weights
-
-Important Note:
-Some meshes may extract with vertices pulling to the origin due to invalid or missing weights.
-If this occurs, enabling AutoWeighting is recommended
+- 
+PruneToMAXInfluences
+- If a mesh has more than 4 influences per vert, this will prune it to MAX 4 as per UE's convention
 
 Extract Morph Targets:
 - True extracts and applies relevant morph targets
