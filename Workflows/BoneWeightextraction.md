@@ -69,7 +69,7 @@ AutoWeighting:
   Refer to [Auto-Weighting Controls](Reference/UIMeshControls.md)
 - False preserves the original skin weights
 - 
-PruneToMAXInfluences
+PruneToMAXInfluences:
 - If a mesh has more than 4 influences per vert, this will prune it to MAX 4 as per UE's convention
 
 Extract Morph Targets:
@@ -79,6 +79,16 @@ Extract Morph Targets:
 SkelMesh:
 - True generates a Skeletal Mesh
 - False generates a Static Mesh
+
+Apply Gradient Skinning
+- If not in Masterpose mode, we can weight the cut zones to the bone chain parent, 
+  so the cut zone will deform and have skinweight
+
+  Blendzone Amount:
+  - How much the cutzone Gradient Skinning blends into the neighbouring zone
+ 
+  Edgeloop Reskin Strength
+  - How strongly the Gradient skinning will affect the cutzone
 
 Step 5:
 ---
